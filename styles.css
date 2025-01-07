@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+  }
+  
+  .game-container {
+    text-align: center;
+    color: white;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .controls {
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #6a11cb;
+    color: white;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2575fc;
+  }
+  
+  .turn-indicator {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cell.marked {
+    pointer-events: none;
+  }
+  
+  .result-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .result-overlay.show {
+    display: flex;
+  }
+  
+  #playAgainButton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #playAgainButton:hover {
+    background: #008ba3;
+  }
+  
